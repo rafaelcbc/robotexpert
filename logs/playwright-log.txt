@@ -1,0 +1,180 @@
+{"level":30,"time":"2021-07-06T11:35:03.495Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Listening on 58671"}
+{"level":30,"time":"2021-07-06T11:35:04.783Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active context"}
+{"level":30,"time":"2021-07-06T11:35:05.436Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Video path: undefined"}
+{"level":30,"time":"2021-07-06T11:35:05.436Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active page"}
+{"level":30,"time":"2021-07-06T11:35:08.703Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Retrieved text for element css=aside strong containing Administrador"}
+================= Original suppressed error =================
+page.waitForSelector: Timeout 5000ms exceeded.
+=========================== logs ===========================
+waiting for selector "css=.Toastify__toast-body >> text=Email já existe no sistema." to be visible
+============================================================
+Note: use DEBUG=pw:api environment variable to capture Playwright logs.
+Error
+    at Object.captureStackTrace (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\utils\stackTrace.js:48:19)
+    at Connection.sendMessageToServer (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\connection.js:69:48)
+    at Proxy.<anonymous> (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\channelOwner.js:64:61)
+    at c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\frame.js:202:42
+    at Frame._wrapApiCall (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\channelOwner.js:77:34)
+    at Frame.waitForSelector (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\frame.js:197:21)
+    at c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:241:60
+    at Page._attributeToPage (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:231:20)
+    at Page.waitForSelector (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:241:21)
+    at Object.<anonymous> (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\index.js:69767:45) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2021-07-06T11:35:23.936Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Retrieved text for element xpath=(//form//span)[1] containing Nome é obrigatório"}
+{"level":30,"time":"2021-07-06T11:35:23.959Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Retrieved text for element xpath=(//form//span)[2] containing O e-mail é obrigatório"}
+{"level":30,"time":"2021-07-06T11:35:23.983Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Retrieved text for element xpath=(//form//span)[3] containing idade é obrigatória"}
+{"level":30,"time":"2021-07-06T11:35:24.005Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Retrieved text for element xpath=(//form//span)[4] containing o peso é obrigatório"}
+{"level":30,"time":"2021-07-06T11:35:24.026Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Retrieved text for element xpath=(//form//span)[5] containing a Altura é obrigatória"}
+{"level":30,"time":"2021-07-06T11:35:24.351Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Retrieved attribute for element css=input[name=age] containing number"}
+{"level":30,"time":"2021-07-06T11:35:24.519Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Retrieved attribute for element css=input[name=weight] containing number"}
+{"level":30,"time":"2021-07-06T11:35:24.668Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Retrieved attribute for element css=input[name=feet_tall] containing number"}
+{"level":30,"time":"2021-07-06T11:35:24.982Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Retrieved attribute for element css=input[name=email] containing email"}
+{"level":30,"time":"2021-07-06T11:35:25.603Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active context"}
+{"level":30,"time":"2021-07-06T11:35:25.603Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-06T11:35:25.604Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active page"}
+{"level":30,"time":"2021-07-06T11:35:25.631Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active context"}
+{"level":30,"time":"2021-07-06T11:35:25.631Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-06T11:35:25.631Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active page"}
+{"level":30,"time":"2021-07-06T11:35:26.134Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active context"}
+{"level":30,"time":"2021-07-06T11:35:26.341Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Video path: undefined"}
+{"level":30,"time":"2021-07-06T11:35:26.341Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active page"}
+{"level":30,"time":"2021-07-06T11:35:29.856Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Retrieved text for element css=aside strong containing Administrador"}
+================= Original suppressed error =================
+page.click: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "xpath=//td[contains(text(), "batman@dc.com")]/../td//button[@id="trash"]"
+============================================================
+Note: use DEBUG=pw:api environment variable to capture Playwright logs.
+Error
+    at Object.captureStackTrace (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\utils\stackTrace.js:48:19)
+    at Connection.sendMessageToServer (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\connection.js:69:48)
+    at Proxy.<anonymous> (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\channelOwner.js:64:61)
+    at c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\frame.js:279:34
+    at Frame._wrapApiCall (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\channelOwner.js:77:34)
+    at Frame.click (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\frame.js:278:21)
+    at c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:447:60
+    at Page._attributeToPage (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:231:20)
+    at Page.click (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:447:21)
+    at Object.<anonymous> (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\index.js:69767:45) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2021-07-06T11:35:45.100Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active context"}
+{"level":30,"time":"2021-07-06T11:35:45.100Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-06T11:35:45.100Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active page"}
+{"level":30,"time":"2021-07-06T11:35:45.127Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active context"}
+{"level":30,"time":"2021-07-06T11:35:45.127Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-06T11:35:45.127Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active page"}
+{"level":30,"time":"2021-07-06T11:35:45.565Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active context"}
+{"level":30,"time":"2021-07-06T11:35:45.799Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Video path: undefined"}
+{"level":30,"time":"2021-07-06T11:35:45.799Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active page"}
+{"level":30,"time":"2021-07-06T11:35:49.230Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Retrieved text for element css=aside strong containing Administrador"}
+================= Original suppressed error =================
+page.click: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "xpath=//td[contains(text(), "ironman@marvel.com")]/../td//button[@id="trash"]"
+============================================================
+Note: use DEBUG=pw:api environment variable to capture Playwright logs.
+Error
+    at Object.captureStackTrace (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\utils\stackTrace.js:48:19)
+    at Connection.sendMessageToServer (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\connection.js:69:48)
+    at Proxy.<anonymous> (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\channelOwner.js:64:61)
+    at c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\frame.js:279:34
+    at Frame._wrapApiCall (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\channelOwner.js:77:34)
+    at Frame.click (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\frame.js:278:21)
+    at c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:447:60
+    at Page._attributeToPage (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:231:20)
+    at Page.click (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:447:21)
+    at Object.<anonymous> (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\index.js:69767:45) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2021-07-06T11:36:02.277Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active context"}
+{"level":30,"time":"2021-07-06T11:36:02.277Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-06T11:36:02.277Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active page"}
+{"level":30,"time":"2021-07-06T11:36:02.311Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active context"}
+{"level":30,"time":"2021-07-06T11:36:02.311Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-06T11:36:02.311Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active page"}
+{"level":30,"time":"2021-07-06T11:36:02.755Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active context"}
+{"level":30,"time":"2021-07-06T11:36:03.005Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Video path: undefined"}
+{"level":30,"time":"2021-07-06T11:36:03.005Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active page"}
+{"level":30,"time":"2021-07-06T11:36:06.251Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Retrieved text for element css=aside strong containing Administrador"}
+================= Original suppressed error =================
+page.waitForSelector: Timeout 5000ms exceeded.
+=========================== logs ===========================
+waiting for selector "css=table tbody tr >> text=Steve Jobs" to be visible
+============================================================
+Note: use DEBUG=pw:api environment variable to capture Playwright logs.
+Error
+    at Object.captureStackTrace (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\utils\stackTrace.js:48:19)
+    at Connection.sendMessageToServer (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\connection.js:69:48)
+    at Proxy.<anonymous> (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\channelOwner.js:64:61)
+    at c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\frame.js:202:42
+    at Frame._wrapApiCall (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\channelOwner.js:77:34)
+    at Frame.waitForSelector (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\frame.js:197:21)
+    at c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:241:60
+    at Page._attributeToPage (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:231:20)
+    at Page.waitForSelector (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:241:21)
+    at Object.<anonymous> (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\index.js:69767:45) {
+  name: 'TimeoutError'
+}
+=============================================================
+================= Original suppressed error =================
+page.waitForSelector: Timeout 5000ms exceeded.
+=========================== logs ===========================
+waiting for selector "css=table tbody tr >> text=David Guetta" to be visible
+============================================================
+Note: use DEBUG=pw:api environment variable to capture Playwright logs.
+Error
+    at Object.captureStackTrace (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\utils\stackTrace.js:48:19)
+    at Connection.sendMessageToServer (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\connection.js:69:48)
+    at Proxy.<anonymous> (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\channelOwner.js:64:61)
+    at c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\frame.js:202:42
+    at Frame._wrapApiCall (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\channelOwner.js:77:34)
+    at Frame.waitForSelector (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\frame.js:197:21)
+    at c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:241:60
+    at Page._attributeToPage (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:231:20)
+    at Page.waitForSelector (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:241:21)
+    at Object.<anonymous> (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\index.js:69767:45) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2021-07-06T11:36:32.553Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active context"}
+{"level":30,"time":"2021-07-06T11:36:32.553Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-06T11:36:32.553Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active page"}
+{"level":30,"time":"2021-07-06T11:36:32.579Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active context"}
+{"level":30,"time":"2021-07-06T11:36:32.579Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-06T11:36:32.579Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active page"}
+{"level":30,"time":"2021-07-06T11:36:33.036Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active context"}
+{"level":30,"time":"2021-07-06T11:36:33.285Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Video path: undefined"}
+{"level":30,"time":"2021-07-06T11:36:33.285Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active page"}
+{"level":30,"time":"2021-07-06T11:36:36.550Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Retrieved text for element css=aside strong containing Administrador"}
+================= Original suppressed error =================
+page.click: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "xpath=//td[contains(text(), "kamalakhan@gmail.com")]/..//a[@class="edit"]"
+============================================================
+Note: use DEBUG=pw:api environment variable to capture Playwright logs.
+Error
+    at Object.captureStackTrace (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\utils\stackTrace.js:48:19)
+    at Connection.sendMessageToServer (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\connection.js:69:48)
+    at Proxy.<anonymous> (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\channelOwner.js:64:61)
+    at c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\frame.js:279:34
+    at Frame._wrapApiCall (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\channelOwner.js:77:34)
+    at Frame.click (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\frame.js:278:21)
+    at c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:447:60
+    at Page._attributeToPage (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:231:20)
+    at Page.click (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\node_modules\playwright\lib\client\page.js:447:21)
+    at Object.<anonymous> (c:\users\rafael cardoso\appdata\local\programs\python\python38-32\lib\site-packages\Browser\wrapper\index.js:69767:45) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2021-07-06T11:36:54.597Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active context"}
+{"level":30,"time":"2021-07-06T11:36:54.597Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-06T11:36:54.597Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active page"}
+{"level":30,"time":"2021-07-06T11:36:54.635Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active context"}
+{"level":30,"time":"2021-07-06T11:36:54.635Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changing current active page"}
+{"level":30,"time":"2021-07-06T11:36:54.635Z","pid":3780,"hostname":"RAFAELCARDOSO","msg":"Changed active page"}
