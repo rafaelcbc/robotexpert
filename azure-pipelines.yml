@@ -52,13 +52,13 @@ steps:
     script: |
       # Write your commands here
       
-      robot -d ./logs -x output-xunit.xml -v headless:true -v browser:chromium tests\
+      robot -d ./logs -v headless:true tests\
     displayName: "Run Regression Tests"
 
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'JUnit'
-    testResultsFiles: 'logs/output-xunit.xml'
+# - task: PublishTestResults@2
+#   inputs:
+#     testResultsFormat: 'JUnit'
+#     testResultsFiles: 'logs/output-xunit.xml'
 
 - task: PublishBuildArtifacts@1
   inputs:
