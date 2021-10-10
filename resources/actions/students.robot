@@ -42,7 +42,7 @@ Search Student By Name
 
 ## Links & Buttons
 Go To Form Student
-    Click       css=a[href$="alunos/new"]
+    Click       css=a[href$="alunos/new"] >> text=CADASTRAR
     Wait For Elements State     css=h1 >> text=Novo aluno     visible     5
 
 Go To Student Update Form
