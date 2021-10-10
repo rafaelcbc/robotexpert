@@ -1,38 +1,67 @@
-# Python package
-# Create and test a Python package on multiple Python versions.
-# Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/python
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
 
 trigger:
 - main
 
 pool:
   vmImage: ubuntu-latest
-strategy:
-  matrix:
-    # Testes em versões anteriores do Python
-    # Python27:
-    #   python.version: '2.7'
-    # Python35:
-    #   python.version: '3.5'
-    # Python36:
-    #   python.version: '3.6'
-    Python37:
-      python.version: '3.7'
 
 steps:
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: '$(python.version)'
-  displayName: 'Use Python $(python.version)'
+    versionSpec: '3.7'
+    addToPath: true
+    architecture: 'x64'
 
-- script: |
-    python -m pip install --upgrade pip
-    pip install -r requirements.txt
-  displayName: 'Install dependencies'
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+      sudo apt-get install -y nodejs
+      sudo apt-get install -y xvfb ca-certificates net-tools netcat gnupg ffmpeg libgtk-3-0 libgdk-pixbuf2.0-dev libxcomposite-dev libdbus-glib-1-2 libatk-bridge2.0-0 wget libgbm1 libnss3 libxss1 libasound2
+    displayName: "Install Ubuntu Dependencies"
 
-- script: |
-    pip install pytest pytest-azurepipelines
-    pytest
-  displayName: 'pytest'
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      python -m pip install --upgrade pip
+      pip install -r requirements.txt
+    displayName: "Install Project Dependencies"
 
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      rfbrowser init
+    displayName: "Lib Browser Init"
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      robot -d ./logs -x output-xunit.xml -v headless:true -v browser:chromium tests\
+    displayName: "Run Regression Tests"
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'logs/output-xunit.xml'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'logs'
+    ArtifactName: 'results'
+    publishLocation: 'Container'
