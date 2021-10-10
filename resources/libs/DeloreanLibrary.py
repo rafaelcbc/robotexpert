@@ -5,10 +5,10 @@ class DeloreanLibrary():
 
     def connect(self):
         return psycopg2.connect(
-            host='ec2-52-7-115-250.compute-1.amazonaws.com',
-            database='d8rvaccp6aaf5v',
-            user='fylrfbtcrrunbh',
-            password='e1ce1f5ae449b4c613a1b93421a038d25bef37b6021638beb9f4b88196945058'
+            host='ec2-3-234-85-177.compute-1.amazonaws.com',
+            database='d7lvcfh7tv8hts',
+            user='kspvidrcffyoll',
+            password='b1f5878c3d2b52ce198f7a7fc51ac6fab29d4457c614f587ec9132f3a8e83f9e'
         )
         
     # No Robot vira uma KW automágicamente => Remove Student     email@dejado.com
