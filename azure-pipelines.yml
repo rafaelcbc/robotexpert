@@ -52,7 +52,7 @@ steps:
     script: |
       # Write your commands here
       
-      robot -d ./logs -v headless:true tests/login
+      robot -d ./logs -v headless:true tests/
     displayName: "Run Regression Tests"
 
 # - task: PublishTestResults@2
