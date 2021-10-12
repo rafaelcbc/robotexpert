@@ -3,7 +3,7 @@ Documentation       Ações do menu superior de navegação
 
 ***Keywords***
 Go To Students
-    Click       css=a[href$=alunos]
+    Click       css=a[href$=alunos] >>  text="ALUNOS"
     Wait For Elements State     css=h1 >> text=Gestão de Alunos     visible     5
 
 Go To Plans
