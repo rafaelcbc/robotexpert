@@ -25,7 +25,7 @@ steps:
       curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
       sudo apt-get install -y nodejs
       sudo apt-get install -y xvfb ca-certificates net-tools netcat gnupg ffmpeg libgtk-3-0 libgdk-pixbuf2.0-dev libxcomposite-dev libdbus-glib-1-2 libatk-bridge2.0-0 wget libgbm1 libnss3 libxss1 libasound2
-    displayName: "Install Ubuntu Dependencies"
+  displayName: "Install Ubuntu Dependencies"
 
 - task: Bash@3
   inputs:
@@ -35,7 +35,7 @@ steps:
       
       python -m pip install --upgrade pip
       pip install -r requirements.txt
-    displayName: "Install Project Dependencies"
+  displayName: "Install Project Dependencies"
 
 - task: Bash@3
   inputs:
@@ -44,7 +44,7 @@ steps:
       # Write your commands here
       
       rfbrowser init
-    displayName: "Lib Browser Init"
+  displayName: "Lib Browser Init"
 
 - task: Bash@3
   inputs:
@@ -52,13 +52,13 @@ steps:
     script: |
       # Write your commands here
       
-      robot -d ./logs -v headless:true tests/
-    displayName: "Run Regression Tests"
+      robot -d ./logs -x output-xunit.xml -v headless:true tests/
+  displayName: "Run Regression Tests"
 
-# - task: PublishTestResults@2
-#   inputs:
-#     testResultsFormat: 'JUnit'
-#     testResultsFiles: 'logs/output-xunit.xml'
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'logs/output-xunit.xml'
 
 - task: PublishBuildArtifacts@1
   inputs:
